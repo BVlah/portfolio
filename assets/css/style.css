@@ -1,0 +1,79 @@
+:root {
+    --primary-color: #a4f4f9;
+    --secondary-color: #4B4E53;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.primary-border {
+    border-color: var(--primary-color)
+}
+
+.secondary-border {
+    border-color: var(--secondary-color)
+}
+
+/* Header & Nav Bar Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: var(--secondary-color);
+    z-index: 9999;
+}
+
+header h1 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 36px;
+    color: var(--secondary-color);
+}
+
+header a {
+    text-decoration: none;
+    color: var(--secondar-color);
+}
+
+.heading {
+    background-color: var(--primary-color);
+    text-align: right;
+    width: 30%;
+    margin: 10px 0;
+    padding-right: 7px;
+}
+
+header nav {
+    margin: 7px;
+    display: flex;
+    width: 45%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header nav ul li a {
+    padding: 10px;
+    font-weight: 350;
+    font-size: 1.25vw;
+}
