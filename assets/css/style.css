@@ -1,6 +1,7 @@
 :root {
     --primary-color: #a4f4f9;
     --secondary-color: #4B4E53;
+    --tertiary-color: #5a6f89;
 }
 
 * {
@@ -10,7 +11,8 @@
 }
 
 body {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
+    background-color: #FAFAFA;
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -39,6 +41,7 @@ header h1 {
     margin: 0;
     font-size: 42px;
     line-height: 1.25;
+    color: var(--secondary-color);
 }
 
 header a {
@@ -78,9 +81,15 @@ header nav ul li {
 header nav ul li a {
     padding: 10px;
     font-weight: 350;
-    font-size: 18px;
+    font-size: 20px;
 }
-/* Header & Nav Bar Styling ENDS*/
+/* END Header & Nav Bar Styling */
+
+/* Section Styling */
+section {
+    padding: 25px 75px;
+}
+/* END Section Styling */
 
 /* Hero Styling */
 .hero {
@@ -94,7 +103,28 @@ header nav ul li a {
 .hero-subtitle {
     background-color: var(--primary-color);
     width: max-content;
-    margin: 200px 75px 10px 0;
+    margin-top: 125px;
     font-size: 28px;
     padding: 5px;
+}
+
+.hero-subtitle h2 {
+    font-weight: normal;
+    color: var(--secondary-color);
+}
+/* END Hero Styling */
+
+/* Section Title Styles */
+.section-title {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    border-right: 3px solid var(--tertiary-color);
+}
+
+.section-title h2 {
+    font-size: 55px;
+    margin-right: 10px;
+    text-align: right;
 }
