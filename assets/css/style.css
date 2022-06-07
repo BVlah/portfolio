@@ -5,7 +5,7 @@
 
 * {
     box-sizing: border-box;
-    margin: 0;
+    margin: 2px;
     padding: 0;
 }
 
@@ -37,8 +37,9 @@ header {
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
+    font-size: 42px;
     color: var(--secondary-color);
+    line-height: 1.25;
 }
 
 header a {
@@ -49,7 +50,7 @@ header a {
 .heading {
     background-color: var(--primary-color);
     text-align: right;
-    width: 30%;
+    width: 33%;
     margin: 10px 0;
     padding-right: 7px;
 }
@@ -58,22 +59,25 @@ header nav {
     margin: 7px;
     display: flex;
     width: 45%;
+    justify-content: center;
 }
 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
 header nav ul li {
     border-bottom: 3px solid var(--primary-color);
+    margin: 5px;
+    padding-bottom: 3px;
 }
 
 header nav ul li a {
     padding: 10px;
     font-weight: 350;
-    font-size: 1.25vw;
+    font-size: 18px;
 }
