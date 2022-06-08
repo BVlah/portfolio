@@ -44,11 +44,6 @@ header h1 {
     color: var(--secondary-color);
 }
 
-header a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
 .heading {
     background-color: var(--primary-color);
     text-align: right;
@@ -82,6 +77,8 @@ header nav ul li a {
     padding: 10px;
     font-weight: 350;
     font-size: 20px;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 /* END Header & Nav Bar Styling */
 
@@ -117,18 +114,44 @@ section {
 
 /* Section Title Styles */
 .section-title {
-    width: 25%;
+    flex: 1;
     justify-content: right;
     border-right: 3px solid var(--tertiary-color);
 }
 
 .section-title h2 {
     font-size: 55px;
-    margin-right: 10px;
+    margin-right: 5%;
     text-align: right;
 }
 
 .section-info {
+    display: flex;
     flex: 2;
     margin-left: 25px;
+}
+
+
+/* Contact Me Styling */
+.section-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+.section-info ul li {
+    border-bottom: 3px solid var(--tertiary-color);
+    margin: 5px;
+    padding-bottom: 3px;
+}
+
+.section-info ul li a {
+    padding: 10px;
+    font-weight: 350;
+    font-size: 1.25vw;
+    color: var(--tertiary-color);
+    text-decoration: none;
 }
