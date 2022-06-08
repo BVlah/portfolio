@@ -88,6 +88,9 @@ header nav ul li a {
 /* Section Styling */
 section {
     padding: 25px 75px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 /* END Section Styling */
 
@@ -95,9 +98,7 @@ section {
 .hero {
     background-image: url("../images/modern-gold-background-free-vector.jpeg");
     background-size: cover;
-    display: flex;
     justify-content: right;
-    flex-wrap: wrap;
 }
 
 .hero-subtitle {
@@ -117,8 +118,6 @@ section {
 /* Section Title Styles */
 .section-title {
     width: 25%;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: right;
     border-right: 3px solid var(--tertiary-color);
 }
@@ -127,4 +126,9 @@ section {
     font-size: 55px;
     margin-right: 10px;
     text-align: right;
+}
+
+.section-info {
+    flex: 2;
+    margin-left: 25px;
 }
