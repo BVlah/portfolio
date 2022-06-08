@@ -182,7 +182,6 @@ section {
 .right-screen {
     margin-left: 10px;
 }
-
 /* END My Work Styling */
 
 /* Contact Me Styling */
@@ -204,7 +203,116 @@ section {
 .contact ul li a {
     padding: 10px;
     font-weight: 350;
-    font-size: 1.25vw;
+    font-size: 1.5vw;
     color: var(--tertiary-color);
     text-decoration: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+        
+    .hero {
+        justify-content: center;
+    }
+
+    .hero-subtitle {
+        margin-top: 100px;
+    }
+
+    section {
+        padding: 10px 75px;
+    }
+
+    .section-info {
+        margin-left: 0;
+    }
+
+    .section-title {
+        width: 80%;
+        flex: 1 100%;
+        justify-content: center;
+        border-right: 0;
+    }
+
+    .section-title h2 {
+        text-align: center;
+
+    }
+
+    .section-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 10px;
+        border-bottom: 3px solid var(--tertiary-color);
+    }
+
+    .contact {
+        border-bottom: none;
+    }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    section {
+        padding: 25px;
+    }
+
+    .section-info {
+        text-align: left;
+    }
+
+}
+
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .heading {
+        width: 100%;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul li a {
+        font-size: 1.5vw;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .site-title {
+        background-color: var(--primary-color);
+        width: max-content;
+        padding: 5px;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .site-title h2 {
+        font-size: 14px;
+    }
+    
+    .site-title p {
+        font-size: 10px;
+    }
+    
 }
