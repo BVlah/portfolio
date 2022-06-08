@@ -1,0 +1,24 @@
+.hero {
+    justify-content: center;
+    background-image: url("../images/placeholder-background.jpeg");
+}
+
+.hero-subtitle {
+    background-color: var(--primary-color);
+    width: max-content;
+    font-size: 28px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.section-info {
+    text-align: center;
+    display: inline-block;
+}
+
+.section-info h2 {
+    font-size: 48px;
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
